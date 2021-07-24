@@ -1,0 +1,34 @@
+ {% load static %}
+
+ <aside class="sidebar">
+            <div class="sidebar__menu-group">
+                <ul class="sidebar_nav">
+                    <li >
+                        <span></span>
+                    </li>
+                    <li>
+                        <a href="{% url 'home' %}" class="">
+                            <span data-feather="home" class="nav-icon"></span>
+                            <span class="menu-text">Home</span>
+                           
+                        </a>
+                       
+                    </li>
+                   
+                    <li>
+                        <a href="{% url 'pricing' %}" class="">
+                            <span data-feather="dollar-sign" class="nav-icon"></span>
+                            <span class="menu-text">Pricing</span>
+                        </a>
+                    </li>
+                      <li>
+                       <a href="{% url 'faq' %}" class="">
+                         <span data-feather="help-circle" class="nav-icon"></span>
+                            <span class="menu-text">FAQ's</span>
+                       </a>
+                                            </li>
+                   
+                </ul>
+               
+            </div>
+        </aside>

@@ -1,0 +1,447 @@
+{% extends 'main.html' %}
+{% load static %}
+
+      {% block content %}
+<div class="contents">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+
+                        <div class="breadcrumb-main">
+                            <h4 class="text-capitalize breadcrumb-title">Frequently Asked Questions</h4>
+                            <div class="breadcrumb-action justify-content-center flex-wrap">
+                                
+                               
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-3 col-sm-5">
+                        <!-- Card 1 -->
+                        <div class="card shadow-lg">
+                            <div class="card-body p-0">
+                                <div class="faqs-wrapper">
+                                    <div class="px-30 pt-35 ">
+                                        <span class="px-20 py-2 fs-14 rounded-pill bg-normal color-light">Browse by Topic</span>
+                                    </div>
+                                    <div class="faqs-wrapper-tab p-15 pt-25 pb-30">
+                                        <div class="nav flex-column text-left mb-2" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                                <span class="dot bg-primary"></span>About Nimmio</a>
+                                            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">
+                                                <span class="dot bg-warning"></span>Your Downloads</a>
+                                           <!--  <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                                <span class="dot bg-success"></span>Components</a>
+                                            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">
+                                                <span class="dot bg-warning"></span>Build process</a>
+                                            <a class="nav-link" id="v-pills-notification-tab" data-toggle="pill" href="#v-pills-notification" role="tab" aria-controls="v-pills-notification" aria-selected="false">
+                                                <span class="dot bg-info"></span>Support Policy</a>
+                                            <a class="nav-link" id="v-pills-support-tab" data-toggle="pill" href="#v-pills-support" role="tab" aria-controls="v-pills-support" aria-selected="false">
+                                                <span class="dot bg-danger"></span>Accounts & Billing</a> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="card shadow-lg mt-25 mb-md-50 mb-25">
+                            <div class="card-body py-40 px-50">
+                                <div class="faq-support text-center">
+                                    <img src="{% static 'img/svg/faq-support.svg' %}" alt="support" class="svg img-fluid">
+                                    <h5 class="fw-500 mt-30 mb-20 color-dark">Not finding the help you need?</h5>
+                                    <div class="content-center">
+
+
+
+                                        <button class="btn btn-primary btn-default btn-squared text-capitalize px-30">Contact Support
+                                        </button>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- ends: col -->
+                    <div class="col-xl-9 col-sm-7">
+                        <div class="mb-30">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade  show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                    <!-- Edit Profile -->
+
+                                    <div class="card h-100 shadow-lg pb-md-50 pb-30 mb-md-50 mb-30">
+                                        <div class="card-header px-30 pt-30 pb-25 border-bottom-0">
+                                            <h4 class="fw-500"><b>About Nimmio</b></h4>
+                                        </div>
+                                        <div class="card-body pt-0">
+                                            <div class="application-faqs">
+                                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                                    <!-- panel 1 -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab" id="headingOne">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                    What is the format for the Presentation slides that are delivered as downloadable files?
+                                                                </a>
+                                                            </h4>
+
+                                                        </div>
+                                                        <div id="collapseOne" class="panel-collapse collapse in show" role="tabpanel" aria-labelledby="headingOne">
+                                                            <div class="panel-body">
+                                                                <p class="mb-sm-35 mb-20">The presentation slides are delivered as a standard PPTX file in 16:9 format.</p>
+                                                               <!--  <span class="fs-14 fw-500 color-dark">Was this article
+                                                                    helpful?</span>
+                                                                <div class="button-group d-flex mt-2">
+
+
+
+
+                                                                    <button class="btn btn-default btn-squared btn-outline-success px-15 "><span data-feather="meh"></span>
+                                                                        Yes
+                                                                    </button>
+
+
+                                                                    <button class="btn btn-default btn-squared btn-outline-warning px-15 "><span data-feather="frown"></span>
+                                                                        No
+                                                                    </button>
+
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- panel 2 -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                                            <h4 class="panel-title">
+                                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                   Are all the files editable using standard PowerPoint tool?
+                                                                </a>
+                                                            </h4>
+
+                                                        </div>
+                                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                            <div class="panel-body">
+                                                                <p class="mb-sm-35 mb-20">Yes. Every element of our graphics is fully editable using Microsoft PowerPoint software. No gimmicks at all.</p>
+                                                             <!--    <span class="fs-14 fw-500 color-dark">Was this article
+                                                                    helpful?</span>
+                                                                <div class="button-group d-flex mt-2">
+
+
+                                                                    <button class="btn btn-default btn-squared btn-outline-success px-15 "><span data-feather="meh"></span>
+                                                                        Yes
+                                                                    </button>
+
+
+
+                                                                    <button class="btn btn-default btn-squared btn-outline-warning px-15 "><span data-feather="frown"></span>
+                                                                        No
+                                                                    </button>
+
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- panel 3 -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab" id="headingThree">
+                                                            <h4 class="panel-title">
+                                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                                    Are there any download limits for each user?
+                                                                </a>
+                                                            </h4>
+
+                                                        </div>
+                                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                            <div class="panel-body">
+                                                                <p class="mb-sm-35 mb-20">No, there are no download limits. You may download as many slides as you need.</p>
+<!--                                                                 <span class="fs-14 fw-500 color-dark">Was this article
+                                                                    helpful?</span>
+                                                                <div class="button-group d-flex mt-2">
+
+
+
+                                                                    <button class="btn btn-default btn-squared btn-outline-success px-15 "><span data-feather="meh"></span>
+                                                                        Yes
+                                                                    </button>
+
+
+
+                                                                    <button class="btn btn-default btn-squared btn-outline-warning px-15 "><span data-feather="frown"></span>
+                                                                        No
+                                                                    </button>
+
+
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- panel 4 -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab" id="headingfour">
+                                                            <h4 class="panel-title">
+                                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                                                  How often do you update your library?
+                                                                </a>
+                                                            </h4>
+
+                                                        </div>
+                                                        <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour">
+                                                            <div class="panel-body">
+                                                                <p class="mb-sm-35 mb-20">There are new slides being added every day. We are targeting to add 500 new slides every month to our ever-growing library.</p>
+                                                               <!--  <span class="fs-14 fw-500 color-dark">Was this article
+                                                                    helpful?</span>
+                                                                <div class="button-group d-flex mt-2">
+
+
+                                                                    <button class="btn btn-default btn-squared btn-outline-success px-15 "><span data-feather="meh"></span>
+                                                                        Yes
+                                                                    </button>
+
+
+
+                                                                    <button class="btn btn-default btn-squared btn-outline-warning px-15 "><span data-feather="frown"></span>
+                                                                        No
+                                                                    </button>
+
+
+
+
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- panel 5 -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab" id="headingfive">
+                                                            <h4 class="panel-title">
+                                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsefive" aria-expanded="false" aria-controls="collapsefive">
+                                                                   Can I resell or distribute your content?
+                                                                </a>
+                                                            </h4>
+
+                                                        </div>
+                                                        <div id="collapsefive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfive">
+                                                            <div class="panel-body">
+                                                                <p class="mb-sm-35 mb-20">No, you are not allowed to resell or distribute our content/ graphics in any shape or form. However, you can use our presentation slides and graphics to create your internal or external presentations or deliver design services as part of a project for a client, provided the final end use of the product or service does not involve selling or distribution of presentation slides or graphics in any manner whatsoever. For example, if you created a presentation or a pitch deck using our assets and resources available as slides or graphics, then you may sell your final output as a service provided the resulting output is used by the end-user. If you have any doubt or concern about the usage policy, do not hesitate to contact us at contact@nimmio.com. We will be glad to provide all the necessary information for you to be sure there is no infringement or copyright violations.</p>
+                                                               <!--  <span class="fs-14 fw-500 color-dark">Was this article
+                                                                    helpful?</span>
+                                                                <div class="button-group d-flex mt-2">
+
+
+                                                                    <button class="btn btn-default btn-squared btn-outline-success px-15 "><span data-feather="meh"></span>
+                                                                        Yes
+                                                                    </button>
+
+
+
+                                                                    <button class="btn btn-default btn-squared btn-outline-warning px-15 "><span data-feather="frown"></span>
+                                                                        No
+                                                                    </button>
+
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- panel 6 -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab" id="headingsix">
+                                                            <h4 class="panel-title">
+                                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
+                                                                  I’m a consultant or a designer, may I use your content for a project for a client?
+                                                                </a>
+                                                            </h4>
+
+                                                        </div>
+                                                        <div id="collapsesix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingsix">
+                                                            <div class="panel-body">
+                                                                <p class="mb-sm-35 mb-20">Yes. You may use our content for your client’s project, or any work you are hired to create for a client as per the usage policy described above.</p>
+                                                               <!--  <span class="fs-14 fw-500 color-dark">Was this article
+                                                                    helpful?</span>
+                                                                <div class="button-group d-flex mt-2">
+
+                                                                    <button class="btn btn-default btn-squared btn-outline-success px-15 "><span data-feather="meh"></span>
+                                                                        Yes
+                                                                    </button>
+
+
+                                                                    <button class="btn btn-default btn-squared btn-outline-warning px-15 "><span data-feather="frown"></span>
+                                                                        No
+                                                                    </button>
+
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- panel 7 -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab" id="headingseven">
+                                                            <h4 class="panel-title">
+                                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+                                                                    Does Nimmio provide any customer support?
+                                                                </a>
+                                                            </h4>
+
+                                                        </div>
+                                                        <div id="collapseseven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingseven">
+                                                            <div class="panel-body">
+                                                                <p class="mb-sm-35 mb-20">Yes, we are available for any support you need. You may reach us at: contact@nimmio.com for any queries. We generally respond within 24 hours..</p>
+                                                               <!--  <span class="fs-14 fw-500 color-dark">Was this article
+                                                                    helpful?</span>
+                                                                <div class="button-group d-flex mt-2">
+
+                                                                    <button class="btn btn-default btn-squared btn-outline-success px-15 "><span data-feather="meh"></span>
+                                                                        Yes
+                                                                    </button>
+
+
+
+                                                                    <button class="btn btn-default btn-squared btn-outline-warning px-15 "><span data-feather="frown"></span>
+                                                                        No
+                                                                    </button>
+
+
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Edit Profile End -->
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                <div class="card h-100 shadow-lg pb-md-50 pb-30 mb-md-50 mb-30">
+                                        <div class="card-header px-30 pt-30 pb-25 border-bottom-0">
+                                            <h4 class="fw-500"><b>Your Downloads</b></h4>
+                                        </div>
+                                        <div class="card-body pt-0">
+                                            <div class="application-faqs">
+                                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                                    <!-- panel 1 -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab" id="headingOne">
+                                                            <h4 class="panel-title">
+                                                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                                  Does the download include a Keynote file also or it’s just PowerPoint format?
+                                                                </a>
+                                                            </h4>
+
+                                                        </div>
+                                                        <div id="collapseOne" class="panel-collapse collapse in show" role="tabpanel" aria-labelledby="headingOne">
+                                                            <div class="panel-body">
+                                                                <p class="mb-sm-35 mb-20">No, at this point in time, what you get is a PPTX file format. But hey just a quick tip: You can easily open a PPTX file in Keynote software and save it in keynote (.key) format.</p>
+                                                               <!--  <span class="fs-14 fw-500 color-dark">Was this article
+                                                                    helpful?</span>
+                                                                <div class="button-group d-flex mt-2">
+
+
+
+
+                                                                    <button class="btn btn-default btn-squared btn-outline-success px-15 "><span data-feather="meh"></span>
+                                                                        Yes
+                                                                    </button>
+
+
+                                                                    <button class="btn btn-default btn-squared btn-outline-warning px-15 "><span data-feather="frown"></span>
+                                                                        No
+                                                                    </button>
+
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- panel 2 -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                                            <h4 class="panel-title">
+                                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                                   Can I import your slides into Google Slides?
+                                                                </a>
+                                                            </h4>
+
+                                                        </div>
+                                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                            <div class="panel-body">
+                                                                <p class="mb-sm-35 mb-20">Yes, google slides allows you to import PPTX file format which is a standard Microsoft PowerPoint file format.</p>
+                                                             <!--    <span class="fs-14 fw-500 color-dark">Was this article
+                                                                    helpful?</span>
+                                                                <div class="button-group d-flex mt-2">
+
+
+                                                                    <button class="btn btn-default btn-squared btn-outline-success px-15 "><span data-feather="meh"></span>
+                                                                        Yes
+                                                                    </button>
+
+
+
+                                                                    <button class="btn btn-default btn-squared btn-outline-warning px-15 "><span data-feather="frown"></span>
+                                                                        No
+                                                                    </button>
+
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- panel 3 -->
+                                                    <div class="panel panel-default">
+                                                        <div class="panel-heading" role="tab" id="headingThree">
+                                                            <h4 class="panel-title">
+                                                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                                   My email address has changed; can I modify my account email address?
+                                                                </a>
+                                                            </h4>
+
+                                                        </div>
+                                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                            <div class="panel-body">
+                                                                <p class="mb-sm-35 mb-20">No, the system doesn’t allow the user to change his/ her email address, however you are more than welcome to create a fresh account for your new email address. Please note that you will not be able to access any of your previous downloads with the new mail account, for which you will have to access your old account with the associated email address.</p>
+<!--                                                                 <span class="fs-14 fw-500 color-dark">Was this article
+                                                                    helpful?</span>
+                                                                <div class="button-group d-flex mt-2">
+
+
+
+                                                                    <button class="btn btn-default btn-squared btn-outline-success px-15 "><span data-feather="meh"></span>
+                                                                        Yes
+                                                                    </button>
+
+
+
+                                                                    <button class="btn btn-default btn-squared btn-outline-warning px-15 "><span data-feather="frown"></span>
+                                                                        No
+                                                                    </button>
+
+
+                                                                </div> -->
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                              </div>
+                                        </div>
+                                  </div>
+                            </div>
+
+
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                </div>
+                                <div class="tab-pane fade " id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-notification" role="tabpanel" aria-labelledby="v-pills-notification-tab">
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-support" role="tabpanel" aria-labelledby="v-pills-support-tab">
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- ends: col -->
+                </div>
+            </div>
+
+        </div>
+
+     {% endblock content %}

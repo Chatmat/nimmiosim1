@@ -1,0 +1,3 @@
+Google outh credential for login
+ID :355796859350-3ihngqsrecsubbn7i8ibvclrq6fob4r1.apps.googleusercontent.com
+secert: f1h4XF6o9HtSucRlyvzR62mJ
